@@ -38,21 +38,29 @@ void sample ::setData(int a1, int b1, int c1)
 
 int main()
 {
-    int x, y, z;
+    cout << "\nWelcome to C++ { Classes And Objects }" << endl;
 
-    // create the class object
-    sample s;
+    /*
+    > C++ ->> Initially C++ called -->> c with classes by strousstroup
+    > class - extension of structures ( in C )
+    > classes can have properties
+    > in Class we can make private, protected, public
 
-    cout << "Enter the Value of A " << endl;
-    cin >> x;
+    class syntax: 
 
-    cout << "Enter the Value of B " << endl;
-    cin >> y;
+    // In class bydefault statements are private
+    // There are the Three methods in Classes #private || #pprotected  || #public
 
-    cout << "Enter the Value of C " << endl;
-    cin >> z;
+    class class_name
+    {
+        class_declaration;
 
-    s.setData(x, y, z);
-    s.getData();
+    };
+
+    --> limitations of structure
+    1. members are public
+    2. it has no methods 
+
+    */
     return 0;
 }
