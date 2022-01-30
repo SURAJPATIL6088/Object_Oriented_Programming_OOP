@@ -11,6 +11,11 @@ private:
     char div;
 
 public:
+    // default constructor
+    Student()
+    {
+    }
+
     void setRoll(int a)
     {
         roll_no = a;
@@ -44,41 +49,31 @@ public:
 
 int main()
 {
-    int n;
-    cout << "Enter the Number of Student : " << endl;
-    cin >> n;
 
-    int rn[n];
-    string sn[n];
-    char dv[n];
+    int rn;
+    string sn;
+    char dv;
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << "For Student " << (i + 1) << endl;
-        cout << "Enter Your Roll No : " << endl;
-        cin >> rn[i];
+    cout << "For Student " << endl;
+    cout << "Enter Your Roll No : " << endl;
+    cin >> rn;
 
-        cout << "Enter Your Name : " << endl;
-        cin >> sn[i];
+    cout << "Enter Your Name : " << endl;
+    cin >> sn;
 
-        cout << "Enter Your Division : " << endl;
-        cin >> dv[i];
-    }
-    Student stu;  // object of the class
+    cout << "Enter Your Division : " << endl;
+    cin >> dv;
 
-    for (int i = 0; i < n; i++)
-    {
-        stu.setRoll(rn[i]);
-        stu.setName(sn[i]);
-        stu.setDiv(dv[i]);
-    }
+    Student stu; // object of the class
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << "\nFor Student " << (i + 1) << endl;
-        stu.getRoll();
-        stu.getName();
-        stu.getDiv();
-    }
+    stu.setRoll(rn);
+    stu.setName(sn);
+    stu.setDiv(dv);
+
+    cout << "\nStudent Details\n";
+    stu.getRoll();
+    stu.getName();
+    stu.getDiv();
+
     return 0;
 }

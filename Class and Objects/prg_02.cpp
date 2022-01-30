@@ -43,6 +43,7 @@ int main()
     // create the class object
     sample s;
 
+    // here we accept the values from the user
     cout << "Enter the Value of A " << endl;
     cin >> x;
 
@@ -54,5 +55,6 @@ int main()
 
     s.setData(x, y, z);
     s.getData();
+    
     return 0;
 }

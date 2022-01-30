@@ -12,7 +12,7 @@ private:
 public:
     void enter_bin(void)
     {
-        cout << "Enter the Binary Number : " << endl;
+        cout << "\nEnter the Binary Number : " << endl;
         cin >> s;
     }
 
@@ -45,7 +45,7 @@ public:
 
     void ans_ones_complement(void)
     {
-        cout << "Answer of the Binary Number : " << endl;
+        cout << "Answer of the Binary Number : ";
         for (int i = 0; i < s.length(); i++)
         {
             cout << s.at(i);

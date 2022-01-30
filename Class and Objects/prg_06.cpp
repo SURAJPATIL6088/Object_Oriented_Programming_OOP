@@ -1,4 +1,4 @@
-// friend function
+// static allocation And Dynamic allocation
 
 #include <iostream>
 using namespace std;
@@ -21,28 +21,30 @@ public:
         cin >> m3;
     }
 
-    // Basic syntax --
-    // friend <return-type> method_name (class_name class_object)
-    // class_object will access all the data from the class
-    friend int show_avg(student s)
+    void show_avg()
     {
-        /*
-            show_avg is a friend of the class student therefore show_avg function
-            will directly access all the data of the student
-        */
-        int avg = (s.m1 + s.m2 + s.m3) / 3;
-        return avg;
+        int avg = (m1 + m2 + m3) / 3;
+        cout<<"Average Marks is "<<avg<<endl;
     }
 };
 
 int main()
 {
+    // static allocation
     student stu;
 
     stu.put_marks();
+    stu.show_avg();
 
-    // here we give the class inside its method
-    cout << "Average Marks is " << show_avg(stu);
+    // dynamically allocation 
+    // it's accesible using arrow operator ( -> )
+    // size will be created the in heap
+
+    student *s = new student;
+
+    // accessing the member function
+    s->put_marks();
+    s->show_avg();
 
     return 0;
 }

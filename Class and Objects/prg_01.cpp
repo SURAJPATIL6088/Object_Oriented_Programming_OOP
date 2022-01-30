@@ -1,17 +1,35 @@
+/*
+-> Here we learn what is the classes
+-> initialization of the classes
+-> object creation and accessing the member function of the classes
+*/
+
 #include <iostream>
 using namespace std;
 
 // class syntax
+/*
+
+class class_name
+{
+    //private:
+
+    // protected:
+
+    // public:
+
+};
+*/
 
 class sample
 {
     // In class bydefault statements are private
-    // There are the Three methods in Classes #private || #pprotected  || #public
+    // There are the Three methods in Classes #private || #protected  || #public
 
 private:
     int a, b, c;
 
-    // protected:
+// protected:
 
 public:
     // we can Initialise the value in two ways
@@ -46,11 +64,6 @@ int main()
     > classes can have properties
     > in Class we can make private, protected, public
 
-    class syntax: 
-
-    // In class bydefault statements are private
-    // There are the Three methods in Classes #private || #pprotected  || #public
-
     class class_name
     {
         class_declaration;
@@ -62,5 +75,13 @@ int main()
     2. it has no methods 
 
     */
+
+   // creation of the object of the class 
+   sample smp;
+
+    // accessing the member function of the classes
+    smp.setData(10, 20, 30);
+    smp.getData();
+
     return 0;
 }

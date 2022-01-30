@@ -36,7 +36,7 @@ public:
         }
         else
         {
-            cout<<"Top element is "<<stack[top]<<endl;
+            cout << "Top element is " << stack[top] << endl;
         }
     }
 
@@ -80,6 +80,12 @@ int main()
     cout << "STACK DATA STRUCTURE" << endl;
 
     cout << "---------------------------------------" << endl;
+
+    cout << "1. PUSH" << endl
+         << "2. POP" << endl
+         << "3. PEEK" << endl
+         << "4. DISPLAY" << endl
+         << "5. EXIT" << endl;
 
     do
     {
